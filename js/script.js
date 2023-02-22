@@ -37,7 +37,7 @@ if(età < 18) {
     document.writeln("Il prezzo del biglietto del treno è " + prezzoScontatoMinorenni + "€");
 } else if(età >= 65) {
     console.log("Il prezzo del biglietto del treno è " + prezzoScontatoAnziani + "€");
-    document.writeln("Il prezzo del biglietto del treno è " + prezzoScontatoMinorenni + "€");
+    document.writeln("Il prezzo del biglietto del treno è " + prezzoScontatoAnziani + "€");
 } else {
     console.log("Il prezzo del biglietto del treno è " + totPrezzoKm + "€");
     document.writeln("Il prezzo del biglietto del treno è " + totPrezzoKm + "€");
