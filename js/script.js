@@ -28,14 +28,17 @@ let età = prompt("Inserisci la tua età");
 
 let totPrezzoKm = km * 0.21;
 
-const scontoMinorenni = (totPrezzoKm - ((totPrezzoKm / 100) * 20)).toFixed(2);
+const prezzoScontatoMinorenni = (totPrezzoKm - ((totPrezzoKm / 100) * 20)).toFixed(2);
 
-const scontoAnziani = (totPrezzoKm - ((totPrezzoKm / 100) * 40)).toFixed(2);
+const prezzoScontatoAnziani = (totPrezzoKm - ((totPrezzoKm / 100) * 40)).toFixed(2);
 
 if(età < 18) {
-    console.log(scontoMinorenni + "€");
+    console.log("Il prezzo del biglietto del treno è " + prezzoScontatoMinorenni + "€");
+    document.writeln("Il prezzo del biglietto del treno è " + prezzoScontatoMinorenni + "€");
 } else if(età >= 65) {
-    console.log(scontoAnziani + "€")
+    console.log("Il prezzo del biglietto del treno è " + prezzoScontatoAnziani + "€");
+    document.writeln("Il prezzo del biglietto del treno è " + prezzoScontatoMinorenni + "€");
 } else {
-    console.log(totPrezzoKm + "€")
+    console.log("Il prezzo del biglietto del treno è " + totPrezzoKm + "€");
+    document.writeln("Il prezzo del biglietto del treno è " + totPrezzoKm + "€");
 }
